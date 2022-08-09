@@ -39,14 +39,54 @@ h1 {
   font-family: var(--heading-font-family);
 }
 
-.contact-link {
-  border: var(--border-primary);
-  color: var(--color-primary);
-  background: var(--color-secondary);
+.contact-link,
+.yoga-link {
   padding: 20px;
   margin: 20px;
   text-decoration: none;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
+}
+.contact-link,
+.weather-link,
+.strawberries-link {
+  border: var(--border-primary);
+  color: var(--color-primary);
+  background: var(--color-secondary);
+}
+
+.yoga-link,
+.weather-link,
+.strawberries-link {
+  border: var(--border-secondary);
+  color: var(--color-secondary);
+  background: var(--color-primary);
+}
+
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.project-discription {
+  padding: 40px 20px;
+}
+
+@media (max-width: 900px) {
+  .project-discription {
+    padding: 0px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 42px;
+  }
 }
