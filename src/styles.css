@@ -1,12 +1,52 @@
+:root {
+  --background-image: #fee9c9;
+  --background-gradient: linear-gradient(to left top, #fee9c9, #98bfd6);
+  --text-color: #5d5c72;
+  --color-primary: #f6f3f2;
+  --color-secondary: #f39e9e;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --border-primary: 1px solid var(--color-primary);
+  --border-secondary: 1px solid var(--color-secondary);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
 body {
-  background: darkgrey;
+  font-family: var(--default-font-family);
+  background: var(--background-image);
+  color: var(--text-color);
 }
-h1 {
-  color: aliceblue;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+
+.hero {
+  background: var(--background-gradient);
+  text-align: center;
+  padding: 100px 20px;
 }
-p {
-  font-family: "Playfair Display", serif;
+
+.hero p {
+  font-family: var(--heading-font-family);
   font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: var(--heading-font-family);
+}
+
+.contact-link {
+  border: var(--border-primary);
+  color: var(--color-primary);
+  background: var(--color-secondary);
+  padding: 20px;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
 }
