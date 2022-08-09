@@ -1,0 +1,12 @@
+body {
+  background: darkgrey;
+}
+h1 {
+  color: aliceblue;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
