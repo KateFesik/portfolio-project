@@ -40,7 +40,9 @@ h1 {
 }
 
 .contact-link,
-.yoga-link {
+.yoga-link,
+.weather-link,
+.strawberries-link {
   padding: 20px;
   margin: 20px;
   text-decoration: none;
@@ -48,9 +50,7 @@ h1 {
   font-size: 18px;
   line-height: 27px;
 }
-.contact-link,
-.weather-link,
-.strawberries-link {
+.contact-link {
   border: var(--border-primary);
   color: var(--color-primary);
   background: var(--color-secondary);
@@ -75,7 +75,7 @@ p {
 }
 
 .project-discription {
-  padding: 40px 20px;
+  padding: 10px;
 }
 
 @media (max-width: 900px) {
