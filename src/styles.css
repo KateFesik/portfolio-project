@@ -61,13 +61,13 @@ body {
 .hero p {
   font-family: var(--heading-font-family);
   font-weight: normal;
-  font-size: 36px;
+  font-size: 34px;
   margin: 0;
 }
 
 .hero h2 {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h1 {
@@ -76,6 +76,7 @@ h1 {
 }
 
 .contact-link,
+.projects-link,
 .yoga-link,
 .weather-link,
 .strawberries-link {
@@ -86,7 +87,8 @@ h1 {
   font-size: 18px;
   line-height: 27px;
 }
-.contact-link {
+.contact-link,
+.projects-link {
   border: var(--border-primary);
   color: var(--color-primary);
   background: var(--color-secondary);
@@ -100,7 +102,8 @@ h1 {
   background: var(--color-primary);
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.projects-link:hover {
   border: var(--border-secondary);
   color: var(--color-secondary);
   background: var(--color-primary);
@@ -120,7 +123,7 @@ h2 {
 
 p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -137,4 +140,22 @@ p {
 .container-strawberries {
   background: var(--background-gradient);
   border: 4px solid var(--color-primary);
+}
+
+.about-section {
+  padding: 0;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--default-font-family);
+}
+
+.about-section-contant {
+  margin: 30px 20px;
 }
