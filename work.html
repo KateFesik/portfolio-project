@@ -41,25 +41,65 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="container d-flex justify-content-between">
+        <a class="logo" href="index.html">
+          <img
+            src="images/shecodes.png"
+            class="logo d-none d-md-block"
+            alt="logo"
+          />
+          <img
+            src="images/logo.png"
+            class="logo d-block d-md-none"
+            alt="logo"
+          />
+        </a>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a
+              class="menu-link"
+              href="index.html"
+              aria-current="page"
+              title="Home page"
+              >Home</a
+            >
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="about.html" title="About page">About</a>
+          </li>
+          <li class="menu-item active">
+            <a class="menu-link" href="work.html" title="Work page">Work</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="contact.html" title="Contact page"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="content-container container">
       <h1 class="mb-4">Take a look at what I've been working on!</h1>
 
       <div class="content">
         <div class="row">
-          <div class="container-strawberries col-md-6 mb-4 text-center">
+          <div class="container-strawberries col-md-6 mb-4 text-center rounded">
             <img
               src="images/strawberry.png"
               alt="strawberry"
               class="project-image img-fluid mb-3 rounded mt-4"
             />
             <h3 class="m-0">Strawberry Page</h3>
-            <p class="text-muted text-nowrap">
+            <p class="text-muted">
               This was my first project. A basic page was created, using HTML,
               CSS.
             </p>
           </div>
 
-          <div class="container-weather col-md-6 mb-4 text-center">
+          <div class="container-weather col-md-6 mb-4 text-center rounded">
             <img
               src="images/weather.png"
               alt="weather"
@@ -75,7 +115,7 @@
             </p>
           </div>
 
-          <div class="container-translator col-md-6 mb-4 text-center">
+          <div class="container-translator col-md-6 mb-4 text-center rounded">
             <img
               src="images/translator.png"
               alt="translator"
@@ -85,7 +125,7 @@
             <p class="text-muted">In progress...</p>
           </div>
 
-          <div class="container-dictionary col-md-6 mb-4 text-center">
+          <div class="container-dictionary col-md-6 mb-4 text-center rounded">
             <img
               src="images/dictionary.png"
               alt="dictionary"

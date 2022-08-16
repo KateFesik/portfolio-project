@@ -41,9 +41,48 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="container d-flex justify-content-between">
+        <a class="logo" href="index.html">
+          <img
+            src="images/shecodes.png"
+            class="logo d-none d-md-block"
+            alt="logo"
+          />
+          <img
+            src="images/logo.png"
+            class="logo d-block d-md-none"
+            alt="logo"
+          />
+        </a>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a
+              class="menu-link"
+              href="index.html"
+              aria-current="page"
+              title="Home page"
+              >Home</a
+            >
+          </li>
+          <li class="menu-item active">
+            <a class="menu-link" href="about.html" title="About page">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="work.html" title="Work page">Work</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="contact.html" title="Contact page"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="content-container container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 container-about rounded">
           <div class="content">
             <h1 class="mb-4">Hi, I'm Kateryna Ivanova</h1>
             <h2 class="mb-4">🇺🇦 Front-end developer, based in Poland</h2>
@@ -53,11 +92,21 @@
               should work on developing their professional skills and learning
               new things all the time.
             </p>
+            <p class="mb-4">
+              I am studying coding at SheCodes courses. I hope that this
+              knowledge will help me develop further and reach new heights.
+              Thank you SheCodes Team for this amazing opportunity!
+            </p>
+
             <a href="work.html" class="btn projects-link">See my projects</a>
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="images/my-photo.png" alt="my-photo" class="img-fluid" />
+          <img
+            src="images/my-photo.png"
+            alt="my-photo"
+            class="img-fluid rounded"
+          />
         </div>
       </div>
     </div>

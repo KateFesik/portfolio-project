@@ -1,6 +1,7 @@
 :root {
   --background-image: #fee9c9;
   --background-gradient: linear-gradient(to left top, #fee9c9, #98bfd6);
+  --background-nav: #98bfd6;
   --text-color: #5d5c72;
   --color-primary: #f6f3f2;
   --color-secondary: #f39e9e;
@@ -15,7 +16,24 @@ body {
   background: var(--background-image);
   color: var(--text-color);
 }
-
+@media (max-width: 1225px) {
+  .container-contact {
+    margin: 40px !important;
+  }
+}
+@media (max-width: 1030px) {
+  .container-contact {
+    padding: 10px !important;
+    margin: 35px !important;
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 920px) {
+  .container-contact {
+    padding: 5px !important;
+    margin: 20px !important;
+  }
+}
 @media (max-width: 900px) {
   .img-yoga,
   .img-weather,
@@ -33,6 +51,7 @@ body {
   .strawberries-info p {
     text-align: justify;
   }
+
   h1 {
     font-size: 50px !important;
   }
@@ -50,6 +69,47 @@ body {
   .hero p {
     font-size: 26px !important;
   }
+  p {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 700px) {
+  .container-contact {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+nav {
+  padding: 30px 20px;
+  margin: 0px;
+  background: var(--background-nav);
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  opacity: 0.7;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 .hero {
@@ -127,10 +187,13 @@ p {
   line-height: 30px;
 }
 
-.img-shecodes {
+.img-shecodes,
+.img-logo {
   width: 140px;
 }
-
+.logo {
+  max-height: 50px;
+}
 .project-discription {
   padding: 10px;
 }
@@ -140,7 +203,8 @@ p {
 .container-strawberries,
 .container-dictionary,
 .container-translator,
-.container-contact {
+.container-contact,
+.container-about {
   background: var(--background-gradient);
   border: 4px solid var(--color-primary);
 }
@@ -195,4 +259,10 @@ p {
   text-decoration: none;
   color: var(--text-color);
   font-size: 22px;
+}
+
+.links-contact:hover {
+  text-decoration: none;
+  color: var(--color-secondary);
+  opacity: 0.7;
 }
