@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Strawberry 🍓</title>
+    <style>
+      body {
+        background: linear-gradient(#eeeeee, #fbc8aa);
+      }
+
+      h1 {
+        color: #00092c;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 15px 0px 0px 0;
+        padding: 40px 0px;
+      }
+      h3 {
+        width: 900px;
+        color: #00092c;
+        font-size: 20px;
+        margin: 15px 0px 0px 0;
+      }
+      p {
+        color: #00092c;
+        font-size: 18px;
+      }
+      button:hover {
+        background: #eeeeee;
+        color: #00092c;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .image_strawberry {
+        float: left;
+        margin: 15px;
+      }
+      .benefits {
+        color: #b20600;
+        text-decoration: underline;
+      }
+      .infoAboutStrawberries {
+        margin-top: 60px;
+        margin-left: 15px;
+        width: 1000px;
+      }
+      .sign {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 14px;
+        padding: 0px;
+        margin: 20px;
+        color: #00092c;
+      }
+      .applyToExperts {
+        font-size: 12px;
+        color: #eeeeee;
+        display: block;
+        background: #b20600;
+        border: 1px solid #b20600;
+        box-shadow: 5px 5px 5px #bebdc1;
+        border-radius: 40px;
+        transition: all 150ms ease-in-out;
+        opacity: 1;
+        margin: 10px;
+        padding: 15px 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="image_strawberry"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/845/original/strawberry.jpeg?1655713030"
+        alt="strawberry"
+        width="300"
+      />
+      <h1><em>Strawberry 🍓</em></h1>
+      <h3>
+        Strawberries are sweet, fragrant berries that are at their best in
+        summer. Discover how to buy the best strawberries, plus how to store,
+        prepare and cook them.
+      </h3>
+      <div class="infoAboutStrawberries">
+        <p>
+          <strong>Once available in Britain</strong> for just a brief period
+          during the summer, strawberries are now a year-round fruit, thanks to
+          imports from warmer climates. However, the varieties grown for export
+          tend to be chosen for their ability to withstand transportation,
+          rather than for their texture or flavour, which often results in a
+          less tender berry with an unremarkable taste. The fact that
+          strawberries intended for export are picked before they’re properly
+          ripe, means that their flavour is further impaired; strawberries don’t
+          ripen after being picked.
+        </p>
+        <p>
+          To enjoy strawberries at their fragrant, juicy and flavourful best
+          it’s worth holding out for the British season – if you want to eat
+          them super-ripe, pick-your-own is best
+        </p>
+        <p>
+          Read our guide on the
+          <span class="benefits">
+            <a
+              href="https://www.bbcgoodfood.com/howto/guide/ingredient-focus-strawberries"
+              target="_blank"
+              >health benefits of strawberry.</a
+            ></span
+          >
+        </p>
+        <h3>Availability</h3>
+        <p>
+          Imports are available all year round, but the British season runs from
+          late May to early September. Strawberries are easy to grow in the
+          garden or in a pot on a sunny windowsill – just remember to protect
+          them from birds when the fruits appear! Learn how to grow your own
+          strawberries from the experts.
+        </p>
+        <button class="applyToExperts">Apply to Gardeners World</button>
+      </div>
+      <hr />
+      <p class="sign">Coded by Kateryna Ivanova</p>
+    </div>
+    <script>
+      function applyToExperts() {
+        let firstName = prompt("What is your first name?");
+        let surname = prompt("What is your surname?");
+        let email = prompt("What is your email?");
+        let fullName = firstName + " " + surname;
+        if (firstName.length > 0 && surname.length > 0 && email.length > 0) {
+          alert("Thank your, " + fullName + ". We will contact with your.");
+        } else {
+          alert("Could you please enter your contact info again");
+        }
+      }
+      let applyButton = document.querySelector(".applyToExperts");
+      applyButton.addEventListener("click", applyToExperts);
+    </script>
+  </body>
+</html>

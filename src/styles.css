@@ -181,6 +181,12 @@ h1 {
   background: var(--color-secondary);
 }
 
+.yoga-link:visited,
+.weather-link:visited,
+.strawberries-link:visited {
+  border: var(--border-secondary);
+}
+
 h2 {
   font-size: 64px;
 }
@@ -306,4 +312,19 @@ footer p {
 }
 footer {
   margin: 40px 0px;
+}
+.open-sourced {
+  font-size: 16px;
+}
+.open-sourced a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  opacity: 0.7;
+}
+.open-sourced a:hover {
+  opacity: 1;
+}
+.container-footer {
+  margin-top: 0px;
+  padding: 0px;
 }
