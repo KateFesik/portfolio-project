@@ -18,8 +18,15 @@ body {
   color: var(--text-color);
 }
 @media (max-width: 1225px) {
+  .content h1 {
+    font-size: 30px !important;
+  }
   .container-contact {
     margin: 40px !important;
+  }
+  .container-about,
+  .contact-photo {
+    min-height: 600px !important;
   }
 }
 @media (max-width: 1030px) {
@@ -260,9 +267,8 @@ p {
 }
 
 .contact-icon {
-  font-weight: normal !important;
   color: var(--color-secondary);
-  font-size: 40px;
+  font-size: 26px;
 }
 
 .links-contact {
