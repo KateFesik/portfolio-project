@@ -45,6 +45,7 @@ body {
 @media (max-width: 900px) {
   .img-yoga,
   .img-weather,
+  .img-dictionary,
   .img-strawberries {
     display: none;
   }
@@ -150,7 +151,8 @@ h1 {
 .projects-link,
 .yoga-link,
 .weather-link,
-.strawberries-link {
+.strawberries-link,
+.dictionary-link {
   padding: 20px;
   margin: 20px;
   text-decoration: none;
@@ -167,6 +169,7 @@ h1 {
 
 .yoga-link,
 .weather-link,
+.dictionary-link,
 .strawberries-link {
   border: var(--border-secondary);
   color: var(--color-secondary);
@@ -182,6 +185,7 @@ h1 {
 
 .yoga-link:hover,
 .weather-link:hover,
+.dictionary-link:hover,
 .strawberries-link:hover {
   border: var(--border-primary);
   color: var(--color-primary);
@@ -190,6 +194,7 @@ h1 {
 
 .yoga-link:visited,
 .weather-link:visited,
+.dictionary-link:visited,
 .strawberries-link:visited {
   border: var(--border-secondary);
 }
@@ -219,7 +224,7 @@ p {
 .container-weather,
 .container-strawberries,
 .container-dictionary,
-.container-translator,
+.container-dictionary,
 .container-contact,
 .container-about {
   background: var(--background-gradient);
